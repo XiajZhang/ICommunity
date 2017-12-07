@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormFeildsComponent } from './form-feilds.component';
+import { RepoComponent } from './repo.component';
 
-describe('FormFeildsComponent', () => {
-  let component: FormFeildsComponent;
-  let fixture: ComponentFixture<FormFeildsComponent>;
+describe('RepoComponent', () => {
+  let component: RepoComponent;
+  let fixture: ComponentFixture<RepoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormFeildsComponent ]
+      declarations: [ RepoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormFeildsComponent);
+    fixture = TestBed.createComponent(RepoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

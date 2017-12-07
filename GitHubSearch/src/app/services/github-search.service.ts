@@ -2,9 +2,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http, Response } from '@angular/http';
 
+
+
 @Injectable()
-export class GithubSearchService {
+export class GithubSearchService { 
 
-  constructor() { }
+    constructor( public http:Http ) { }
 
+    
 }
