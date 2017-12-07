@@ -1,0 +1,20 @@
+<header>
+    <div class="labels">
+
+        <label>
+          Username: 
+          <input [formControl]="username" type="text" placeholder="Search repo by author...">
+      </label>
+        <label>
+          Page:
+          <input type="number" [formControl]="pageNumber" min="1" placeholder="Default:1">
+          out of
+          <span class="repo-count">{{}}</span>
+      </label>
+    </div>
+    <div class="messages">
+        <div *ngIf="waiting"><i>waiting...</i></div>
+    </div>
+</header>
+<app-repo>
+</app-repo>
