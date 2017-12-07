@@ -16,5 +16,5 @@
         <div *ngIf="waiting"><i>waiting...</i></div>
     </div>
 </header>
-<app-repo>
+<app-repo class="repo repo{{i}}" *ngFor="let repo of repositories;let i=index" [repo]="repo" [i]="i" [repoIndex]="repoIndex">
 </app-repo>
